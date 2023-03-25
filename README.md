@@ -1,2 +1,1 @@
-# diplProject
- reactJsApp
+Dipl. project reactApp
