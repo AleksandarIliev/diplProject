@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+Hi everybody, i'm Aleks I.
+This is my dipl. project: 
+https://github.com/AleksandarIliev/diplProject
+When download, open VSC in folder diplProject-main.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Open one terminal and: 
+    1.1. Write -> cd client
+    1.2. Run npm i 
+    1.3. Write -> npm start
+3. Open another terminal and 
+    3.1. Write -> cd server -> node server.js
+4. Code in client folder:
+    4.1. In public folder:
+        - all photo who use
+        - robots.txt is for what crawlers shouldn't have an access
+    4.2. In src folder: 
+        4.2.1. In folder components have a folders with all component who use in app, separated by a little fragment of code
+        4.2.2. In context folder have a AuthContext who use and create:
+        - use useNavigate
+        - use createContext and useContext from react to create AuthContext
+        - create AuthProvider for propagation who is with authentication to see and work with children 
+        - return AuthContext.Provider with all func inside
+        4.2.3. In hooks folder:
+            - in useForm process initialValue and onSubmitHandler with a three function and return result
+            - in useLocalStorage process with key and defaultValue and with state an function retrun result 
+            - export useService  
+        4.2.4. In reducer folder
+        4.2.5. Service folder create service for a different logic in the project
+            - authService cears for login, register logout logic 
+            - commentService cares for the comments
+            - in productService create all func who need to work with a product
+            - requester 
+    4.3. In App.js use:
+        - useState and useEffect from react
+        - Routes, Route and useNavigate from react-router-dom
+        - import object from productServiceFactory
+        - import AuthProvider
+        - import all components
+    4.4. In two css file have a some bug css who respond for a great visualisation of the site :D
+    4.5. In index file with help BrowserRouter see where is a location in address bar
+5. Code in Server folder
+    
+That's of me friends.
+I hope I will get better with time.
+Bye :)
